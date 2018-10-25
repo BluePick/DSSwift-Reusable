@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SlideToControl" customModule="TechAlchemyProj" customModuleProvider="target">
+            <connections>
+                <outlet property="leadingThumbConstraint" destination="hrl-P2-VBo" id="ltY-cm-PnE"/>
+                <outlet property="leftTextLabel" destination="gK1-Be-Icr" id="hNm-FH-mR4"/>
+                <outlet property="rightTextLabel" destination="SKV-gE-Uro" id="q7X-lQ-LR7"/>
+                <outlet property="thumbView" destination="8CQ-gE-WTA" id="rrV-gf-GbJ"/>
+                <outlet property="viewTitleLabel" destination="JKz-UW-fRb" id="Cbu-lw-Egu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6V-fH-70q">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Zfz-bf-Rpp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWIPE TO ORDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKV-gE-Uro">
+                    <rect key="frame" x="104" y="30" width="263" height="16"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8CQ-gE-WTA">
+                    <rect key="frame" x="4" y="4" width="100" height="67"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£6/Pack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKz-UW-fRb">
+                            <rect key="frame" x="12.5" y="21.5" width="76" height="24"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="JKz-UW-fRb" firstAttribute="centerX" secondItem="8CQ-gE-WTA" secondAttribute="centerX" id="ZeE-ZE-hNL"/>
+                        <constraint firstItem="JKz-UW-fRb" firstAttribute="centerY" secondItem="8CQ-gE-WTA" secondAttribute="centerY" id="cKN-ga-2Lz"/>
+                        <constraint firstAttribute="width" constant="100" id="qgV-J6-dzi"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A NEW PACK IS COMING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK1-Be-Icr">
+                    <rect key="frame" x="8" y="29.5" width="263" height="16"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8CQ-gE-WTA" secondAttribute="bottom" constant="4" id="11w-4R-nUy"/>
+                <constraint firstItem="SKV-gE-Uro" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="104" id="5XS-ba-DgB"/>
+                <constraint firstItem="gK1-Be-Icr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Edi-w0-tUo"/>
+                <constraint firstAttribute="trailing" secondItem="SKV-gE-Uro" secondAttribute="trailing" constant="8" id="FVV-Mo-r2I"/>
+                <constraint firstAttribute="trailing" secondItem="gK1-Be-Icr" secondAttribute="trailing" constant="104" id="FfP-l1-OiK"/>
+                <constraint firstAttribute="trailing" secondItem="X6V-fH-70q" secondAttribute="trailing" id="bnT-9y-tXl"/>
+                <constraint firstAttribute="bottom" secondItem="X6V-fH-70q" secondAttribute="bottom" id="eLV-lZ-9N0"/>
+                <constraint firstItem="X6V-fH-70q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gzN-vb-vJS"/>
+                <constraint firstItem="8CQ-gE-WTA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="hrl-P2-VBo"/>
+                <constraint firstItem="SKV-gE-Uro" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="l0J-oD-SLt"/>
+                <constraint firstItem="8CQ-gE-WTA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="oJw-1l-GAG"/>
+                <constraint firstItem="X6V-fH-70q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tMx-PP-cdT"/>
+                <constraint firstItem="gK1-Be-Icr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yfK-g4-C60"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="22.5" y="5.5"/>
+        </view>
+    </objects>
+</document>
