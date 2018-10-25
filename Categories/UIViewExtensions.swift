@@ -1,9 +1,8 @@
 //
 //  UIViewExtensions.swift
-//  TechAlchemyProj
 //
-//  Created by indianic
-//  Copyright © 2018 indianic. All rights reserved.
+//  Created by Jignesh Gajjar
+//  Copyright © 2018. All rights reserved.
 //
 
 
