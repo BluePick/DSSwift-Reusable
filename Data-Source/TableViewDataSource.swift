@@ -34,3 +34,13 @@ class TableViewDataSource<Cell :UITableViewCell,ViewModel> : NSObject, UITableVi
     }
     
 }
+
+//USE
+//DECLARATION
+private var dataSource: TableViewDataSource<CELL_MODEL_CLASS, DATA_MODEL_CLASS>!
+// IMPLIMENTATION
+self.dataSource = TableViewDataSource(cellIdentifier: Cells.indetifier, items: [DATA_MODEL_CLASS], configureCell: { (cell, vm) in
+    cell.configureCell(viewModel: vm)
+})
+self.tblView.dataSource = self.dataSource
+self.tblView.reloadData()
